@@ -79,7 +79,7 @@
                                 "yum install -y git",
                                 "pip install ansible",
                                 "/usr/local/bin/ansible-pull -U https://github.com/escher100/ansible helloworld.yaml -i localhost",
-                                "echo '*/10 * * * * /usr/local/bin/ansible-pull -U https://github.com/escher100/ansible helloworld.yaml -i localhost' > /etc/cron.d/ansible-pull"
+                                "echo '*/10 * * * * ec2-user /usr/local/bin/ansible-pull -U https://github.com/escher100/ansible helloworld.yaml -i localhost' > /etc/cron.d/ansible-pull"
                             ]
                         ]
                     }

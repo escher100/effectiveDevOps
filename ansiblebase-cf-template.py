@@ -39,7 +39,7 @@ ud = Base64(Join('\n', [
     "yum install -y git",
     "pip install ansible",
     AnsiblePullCmd,
-    "echo '*/10 * * * * {}' > /etc/cron.d/ansible-pull".format(AnsiblePullCmd)
+    "echo '*/10 * * * * ec2-user {}' > /etc/cron.d/ansible-pull".format(AnsiblePullCmd)
 ]))
 
 
